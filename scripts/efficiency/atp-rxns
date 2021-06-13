@@ -1,0 +1,176 @@
+AACPSFA1718	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPSFA1817	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPSFA130OH	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS10	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS11	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS12	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS13	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS14	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS15	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS16	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS3	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS4	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS5	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS6	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS7	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS8	cpd_atp	-1	Cell Envelope Biosynthesis
+AACPS9	cpd_atp	-1	Cell Envelope Biosynthesis
+ACCOAC	cpd_atp	-1	Fatty Acid Synthesis
+ACCOAL	cpd_atp	-1	Alternate Carbon Metabolism
+ACGAMK	cpd_atp	-1	Alternate Carbon Metabolism
+ACGK	cpd_atp	-1	Arginine and Proline Metabolism
+ACKr	cpd_atp	1	Pyruvate Metabolism
+ACS	cpd_atp	-1	Pyruvate Metabolism
+ADCOBAK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+ADCOBAS	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+ADCOBHEXS	cpd_atp	-4	Cofactor and Prosthetic Group Biosynthesis
+ADK1	cpd_atp	-1	Nucleotide Salvage Pathways
+ADNCYC	cpd_atp	-1	Nucleotide Salvage Pathways
+ADNK1	cpd_atp	-1	Nucleotide Salvage Pathways
+ADSK	cpd_atp	-1	Cysteine Metabolism
+AIRC2	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+ALAALA	cpd_atp	-1	Cell Envelope Biosynthesis
+ALATRS	cpd_atp	-1	Alanine and Aspartate Metabolism
+AP5AH	cpd_atp	1	Nucleotide Salvage Pathways
+ARGSS	cpd_atp	-1	Arginine and Proline Metabolism
+ARGTRS	cpd_atp	-1	Arginine and Proline Metabolism
+ASNS1	cpd_atp	-1	Alanine and Aspartate Metabolism
+ASNTRS	cpd_atp	-1	Alanine and Aspartate Metabolism
+ASPK	cpd_atp	-1	Threonine and Lysine Metabolism
+ASPTRS	cpd_atp	-1	Alanine and Aspartate Metabolism
+ATPPRT	cpd_atp	-1	Histidine Metabolism
+ATPS4r	cpd_atp	1	Energy Metabolism
+CBIAT	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+CBL1abc	cpd_atp	-1	Transport, Extracellular
+CBLAT	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+CBPS	cpd_atp	-2	Arginine and Proline Metabolism
+CDPMEK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+CTPS2	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+CU2t	cpd_atp	-1	Transport, Extracellular
+CYSTRS	cpd_atp	-1	Cysteine Metabolism
+CYTDK1	cpd_atp	-1	Nucleotide Salvage Pathways
+CYTK1	cpd_atp	-1	Nucleotide Salvage Pathways
+CYTK2	cpd_atp	-1	Nucleotide Salvage Pathways
+Cut1	cpd_atp	-1	Transport, Extracellular
+DADK	cpd_atp	-1	Nucleotide Salvage Pathways
+DAGK	cpd_atp	-1	Cell Envelope Biosynthesis
+DBTSr	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+DGK1	cpd_atp	-1	Nucleotide Salvage Pathways
+DHFS	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+DIPEPabc10	cpd_atp	-1	Transport, Extracellular
+DIPEPabc13	cpd_atp	-1	Transport, Extracellular
+DPCOAK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+DRBK	cpd_atp	-1	Alternate Carbon Metabolism
+DTMPK	cpd_atp	-1	Nucleotide Salvage Pathways
+DURIK1	cpd_atp	-1	Nucleotide Salvage Pathways
+FAO4	cpd_atp	-1	Alternate Carbon Metabolism
+FAO5	cpd_atp	-1	Alternate Carbon Metabolism
+FAO6	cpd_atp	-1	Alternate Carbon Metabolism
+FAO7	cpd_atp	-1	Alternate Carbon Metabolism
+FE2abc	cpd_atp	-1	Transport, Extracellular
+FE3abc	cpd_atp	-1	Transport, Extracellular
+FMNAT	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+FTHFL	cpd_atp	-1	Folate Metabolism
+GALKr	cpd_atp	-1	Alternate Carbon Metabolism
+GBEZ	cpd_atp	-1	Alternate Carbon Metabolism
+GGLUPTS	cpd_atp	-1	Arginine and Proline Metabolism
+GK1	cpd_atp	-1	Nucleotide Salvage Pathways
+GLGC	cpd_atp	-1	NA
+GLNS	cpd_atp	-1	Glutamate Metabolism
+GLNTRS	cpd_atp	-1	Glutamate Metabolism
+GLU5K	cpd_atp	-1	Arginine and Proline Metabolism
+GLUCYSL	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+GLUTRS	cpd_atp	-1	Glutamate Metabolism
+GLYCKb	cpd_atp	-1	Alternate Carbon Metabolism
+GLYK	cpd_atp	-1	Alternate Carbon Metabolism
+GLYTRS	cpd_atp	-1	Glycine and Serine Metabolism
+GMHEPAT	cpd_atp	-1	Cell Envelope Biosynthesis
+GMHEPK	cpd_atp	-1	Cell Envelope Biosynthesis
+GMPS2	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+GSNK	cpd_atp	-1	Nucleotide Salvage Pathways
+GTHRDabc	cpd_atp	-1	Transport, Extracellular
+GTHS	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+GTPDPK	cpd_atp	-1	Nucleotide Salvage Pathways
+HEX1	cpd_atp	-1	NA
+HISTRS	cpd_atp	-1	Histidine Metabolism
+HPPK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+HSK	cpd_atp	-1	Threonine and Lysine Metabolism
+ILETRS	cpd_atp	-1	Valine, Leucine, and Isoleucine Metabolism
+INSK	cpd_atp	-1	Nucleotide Salvage Pathways
+LEUTRS	cpd_atp	-1	Valine, Leucine, and Isoleucine Metabolism
+LPSSYN_core	cpd_atp	-1	Cell Envelope Biosynthesis
+LYSTRS	cpd_atp	-1	Threonine and Lysine Metabolism
+MCCC	cpd_atp	-1	Valine, Leucine, and Isoleucine Metabolism
+MET-LABC	cpd_atp	-1	Transport, Extracellular
+METAT	cpd_atp	-1	Methionine Metabolism
+METTRS	cpd_atp	-1	Methionine Metabolism
+MNabc	cpd_atp	-1	Transport, Extracellular
+MOBDabc	cpd_atp	-1	Transport, Extracellular
+MTRK	cpd_atp	-1	Methionine Metabolism
+NADK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+NADS1	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+NAabcO	cpd_atp	-1	Transport, Extracellular
+NDPK1	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK2	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK3	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK4	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK5	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK6	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK7	cpd_atp	-1	Nucleotide Salvage Pathways
+NDPK8	cpd_atp	-1	Nucleotide Salvage Pathways
+NMNAT	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+NNAT	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+NTPP6	cpd_atp	-1	Nucleotide Salvage Pathways
+OMMBLHXAN	cpd_atp	-2	Cofactor and Prosthetic Group Biosynthesis
+OMPHHXAN	cpd_atp	-2	Cofactor and Prosthetic Group Biosynthesis
+OPHHXAN	cpd_atp	-2	Cofactor and Prosthetic Group Biosynthesis
+PANTS	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+PGK	cpd_atp	1	NA
+PHETRS	cpd_atp	-1	Tyrosine, Tryptophan, and Phenylalanine Metabolism
+PHNabc	cpd_atp	-1	Transport, Extracellular
+PIabc	cpd_atp	-1	Transport, Extracellular
+PMPK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+PNTK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+PPCK	cpd_atp	-1	Anaplerotic reactions
+PPS	cpd_atp	-1	NA
+PRAGS	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+PRAIS	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+PRASCS	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+PRFGS	cpd_atp	-1	Purine and Pyrimidine Biosynthesis
+PRKIN	cpd_atp	-1	Pentose Phosphate Pathway
+PROTRS	cpd_atp	-1	Arginine and Proline Metabolism
+PRPPS	cpd_atp	-1	Histidine Metabolism
+PTPATi	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+PTRCabc	cpd_atp	-1	Transport, Extracellular
+PYK	cpd_atp	1	NA
+RBFK	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+RBK	cpd_atp	-1	Alternate Carbon Metabolism
+RNTR1	cpd_atp	-1	Nucleotide Salvage Pathways
+SADT2	cpd_atp	-1	Cysteine Metabolism
+SELNPS	cpd_atp	-1	Unassigned
+SERTRS	cpd_atp	-1	Glycine and Serine Metabolism
+SHKK	cpd_atp	-1	Tyrosine, Tryptophan, and Phenylalanine Metabolism
+SUCBZL	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+SUCOAS	cpd_atp	-1	Citrate Cycle (TCA)
+TDSK	cpd_atp	-1	Cell Envelope Biosynthesis
+THMabc	cpd_atp	-1	Transport, Extracellular
+THRTRS	cpd_atp	-1	Threonine and Lysine Metabolism
+THZPSN	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+TMDK1	cpd_atp	-1	Nucleotide Salvage Pathways
+TMPKr	cpd_atp	-1	Cofactor and Prosthetic Group Biosynthesis
+TRPTRS	cpd_atp	-1	Tyrosine, Tryptophan, and Phenylalanine Metabolism
+TYRTRS	cpd_atp	-1	Tyrosine, Tryptophan, and Phenylalanine Metabolism
+UAAGDS	cpd_atp	-1	Cell Envelope Biosynthesis
+UAMAGS	cpd_atp	-1	Cell Envelope Biosynthesis
+UAMAS	cpd_atp	-1	Cell Envelope Biosynthesis
+UGMDDS	cpd_atp	-1	Cell Envelope Biosynthesis
+UMPK	cpd_atp	-1	Nucleotide Salvage Pathways
+URIDK2	cpd_atp	-1	Nucleotide Salvage Pathways
+URIK1	cpd_atp	-1	Nucleotide Salvage Pathways
+VALTRS	cpd_atp	-1	Valine, Leucine, and Isoleucine Metabolism
+WO4abc	cpd_atp	-1	Transport, Extracellular
+ARBABC	cpd_atp	-1	Transport, Extracellular
+PHEMEabc	cpd_atp	-1	NA
+RIBabc	cpd_atp	-1	NA
+DNA_SYNTHESIS	cpd_atp	-4.107196	NA
+RNA_SYNTHESIS	cpd_atp	-4.002344	NA

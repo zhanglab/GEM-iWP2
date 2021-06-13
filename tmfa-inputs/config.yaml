@@ -1,0 +1,11 @@
+deltaG: ../tmfa-data-2019-10/WP2-Group-Contribution-Predictions.tsv
+exclude: ../tmfa-data-2019-10/WP2-Group-Contribution-Exclude.tsv
+transporters: ../tmfa-data-2019-10/transport-paramters-shewanella.tsv
+concentrations: ../tmfa-data-2019-10/lmo-812-concentrations-Molar-expanded-20C.tsv
+proton-in: cpd_h[c]
+proton-out: cpd_h[p]
+proton-other:  cpd_h[e]
+water:
+  - cpd_h2o[e]
+  - cpd_h2o[p]
+  - cpd_h2o[c]

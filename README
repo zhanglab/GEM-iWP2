@@ -1,0 +1,68 @@
+Model Files:
+
+reactions.yaml
+- Reaction information for the model.
+
+compounds.tsv
+- Compound data for the model.
+
+WP2-biomass.yaml
+- Biomass and macromolecule synthesis reactions.
+
+WP2-gene-associations.tsv
+- Gene associations for reactions in the model.
+
+WP2-Expression-TPM-table.tsv
+- Tab separated table of TPM values for all genes in the WP2 genome based
+on WP2 transcriptomes from growth at 4C, 15C, and 20C in late log phase.
+
+model*.yaml
+- Central model files for the overall WP2 model and each temperature based
+model.
+
+exchange/*
+- Exchange files representing the LMO 812 media.
+
+limits/*
+- Flux limits settings for each temperature based model.
+
+model-definitions/*
+- Model definition files defining the reactions present in each of the
+temperature based models.
+
+tmfa-inputs/*
+- Input files to run TMFA simulations on temperature based models.
+
+--------------
+Commands used to Run TMFA Simulations:
+
+04 C Simulation:
+psamm-model --model model-04C.yaml tmfa --temp 4 --config tmfa-inputs/config-04C.yaml simulation
+
+15 C Simulation:
+psamm-model --model model-15C.yaml tmfa --temp 15 --config tmfa-inputs/config-15C.yaml simulation
+
+20 C Simulation:
+psamm-model --model model-20C.yaml tmfa --temp 20 --config tmfa-inputs/config-20C.yaml simulation
+
+
+--------------
+Analysis and Simulation Scripts
+Each subfolder in the scripts/ directory contains pre-generated data files, and
+the associated scripts needed to generate data summaries and figures.
+
+pipeline/WP2-modeling.md
+- Markdown file providing instructions on how to run all modeling scripts used
+for simulation and analysis.
+
+scripts/TMFA-Results/*
+- Raw and summarized TMFA simulation data.
+
+scripts/ATPM/*
+- Scripts and data associated with ATP maintenance calculations.
+
+scripts/efficiency/*
+- Scripts associated with calculating metabolic efficiency metrics.
+
+scripts/variability/*
+- Scripts associated with analysis of variability in the WP2 model.

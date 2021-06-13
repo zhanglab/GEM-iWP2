@@ -1,0 +1,40 @@
+- id: DNA_SYNTHESIS
+  name: DNA synthesis 1g
+  equation: (0.454872) cpd_datp[c] + (0.454872) cpd_dttp[c] + (0.571927) cpd_dgtp[c] + (0.571927) cpd_dctp[c] + (4.107196) cpd_atp[c] + (4.107196) cpd_h2o[c] => (4.107196) cpd_adp[c] + (4.107196) cpd_pi[c] + (2.053598) cpd_ppi[c] + (1) cpd_dna_macro[c]
+  subsystem: Biomass
+- id: RNA_SYNTHESIS
+  equation: (4.559989) cpd_atp[c] + (0.533721) cpd_utp[c] + (0.479671) cpd_gtp[c] + (0.430135) cpd_ctp[c] + (4.002344) cpd_h2o[c] => (4.002344) cpd_adp[c] + (2.001172) cpd_ppi[c] + (4.002344) cpd_pi[c] + (1) cpd_rna_macro[c]
+  name: RNA synthesis 1g
+  subsystem: Biomass
+- id: PROT_SYNTHESIS
+  equation: (0.655475) cpd_alatrna[c] + (0.333294) cpd_argtrna[c] + (0.332627) cpd_asntrna[c] + (0.440579) cpd_asptrna[c] + (0.079196) cpd_cystrna[c] + (0.349802) cpd_glntrna[c] + (0.470646) cpd_glutrna[c] + (0.536347) cpd_glytrna[c] + (0.167373) cpd_histrna[c] + (0.508322) cpd_iletrna[c] + (0.821905) cpd_leutrna[c] + (0.414183) cpd_lystrna[c] + (0.20416) cpd_mettrna[c] + (0.316055) cpd_phetrna[c] + (0.294447) cpd_protrna[c] + (0.566954) cpd_sertrna[c] + (0.42452) cpd_thrtrna[c] + (0.093536) cpd_trptrna[c] + (0.239926) cpd_tyrtrna[c] + (0.515805) cpd_valtrna[c] + (15.530304) cpd_gtp[c] + (15.530304) cpd_h2o[c] => (0.655475) cpd_trnaala[c] + (0.333294) cpd_trnaarg[c] + (0.332627) cpd_trnaasn[c] + (0.440579) cpd_trnaasp[c] + (0.079196) cpd_trnacys[c] + (0.349802) cpd_trnagln[c] + (0.470646) cpd_trnaglu[c] + (0.536347) cpd_trnagly[c] + (0.167373) cpd_trnahis[c] + (0.508322) cpd_trnaile[c] + (0.821905) cpd_trnaleu[c] + (0.414183) cpd_trnalys[c] + (0.20416) cpd_trnamet[c] + (0.316055) cpd_trnaphe[c] + (0.294447) cpd_trnapro[c] + (0.566954) cpd_trnaser[c] + (0.42452) cpd_trnathr[c] + (0.093536) cpd_trnatrp[c] + (0.239926) cpd_trnatyr[c] + (0.515805) cpd_trnaval[c] + (15.530304) cpd_gdp[c] + (15.530304) cpd_pi[c] + (1) cpd_protein_macro[c]
+  name: Protein synthesis 1g
+  subsystem: Biomass
+- id: Biomass_WP2
+  name: biomass 1gDW
+  equation: (0.528) cpd_protein_macro[c] + (0.175) cpd_lipid_macro[c] + (0.077) cpd_carbohydrate_macro[c] + (0.09) cpd_rna_macro[c] + (0.05) cpd_dna_macro[c] + (0.025) cpd_peptidoglycan_macro[p] + (0.034) cpd_lps_macro[c] + (0.021) cpd_trace_macro[c] => Biomass[c]
+  subsystem: Biomass
+- id: PEPTIDO_SYNTHESIS
+  name: peptidoglycan 1gDW
+  equation: (1.108807) cpd_peptx[p] => cpd_peptidoglycan_macro[p]
+  subsystem: Biomass
+- id: PASYN_WP2
+  name: Lipid Synthesis WP2 (1g)
+  equation: (0.239054) cpd_ddcaACP[c] + (0.295778) cpd_fa13ACP[c] + (0.320089) cpd_myrsACP[c] + (0.072932) cpd_fa130OH3ACP[c] + (0.16207) cpd_fa3ACP[c] + (1.547771) cpd_hdeACP[c] + (0.514573) cpd_palmACP[c] + (0.064828) cpd_fa171n8ACP[c] + (0.380865) cpd_fa181n7ACP[c] + (0.081035) cpd_ocdACP[c] + (0.287675) cpd_epa[c] + cpd_glyc3p[c] => cpd_12dag3p[c] + (3.966670) |cpd_ACP[c]|
+  subsystem: Biomass
+- id: LIPID_SYNTHESIS
+  name: Phospholipid Synthesis WP2 (1g)
+  equation: (0.578722) cpd_12dgr[c] + (0.000324) cpd_12dag3p[c] + (0.326494) cpd_pe[c] + (0.094459) cpd_pgly[c] => cpd_lipid_macro[c]
+  subsystem: Biomass
+- id: LPS_SYNTHESIS
+  name: LPS synthesis WP2 (1g)
+  equation: (0.350995) cpd_lps_Core[c] => cpd_lps_macro[c]
+  subsystem: Biomass
+- id: GLYCOGEN_SYNTHESIS
+  name: Glycogen Synthesis WP2 (1g)
+  equation: (1.500195) cpd_glycogen[c] => cpd_carbohydrate_macro[c]
+  subsystem: Biomass
+- id: TRACE_ELEMENTS
+  name: Trace Element Synthesis WP2 (1g)
+  equation: (0.000107) cpd_btn[c] + (0.005281) cpd_succoa[c] + (0.009054) cpd_coa[c] + (0.015037) cpd_accoa[c] + (0.012019) cpd_fad[c] + (0.002425) cpd_nadh[c] + (0.002964) cpd_udcpdp[c] + (0.006036) cpd_nadp[c] + (0.012019) cpd_cobamcoa[c] + (0.012019) cpd_mqn7[c] + (0.012019) cpd_sheme[c] + (0.012019) cpd_thmpp[c] + (0.012019) cpd_ubq8h2[c] + (0.012019) cpd_amet[c] + (0.012019) cpd_chor[c] + (0.012019) cpd_pheme[c] + (0.012019) cpd_pydx5p[c] + (0.012019) cpd_ribflv[c] + (0.0180554) cpd_nadph[c] + (0.053896) cpd_amp[c] + (0.096313) cpd_nad[c] + (0.161690) cpd_udpg[c] + (0.266897) cpd_ca2[c] + (0.344293) cpd_fe2[c] + (0.363480) cpd_spmd[c] + (0.444810) cpd_mg2[c] + (0.667189) cpd_nh4[c] + (0.001293) cpd_cobalt2[c] + (0.036326) cpd_cu2[c] + (0.035464) cpd_mn2[c] + (0.000377) cpd_mobd[c] + (0.222378) cpd_so4[c] + (0.266897) cpd_cl[c] + (1.793149) cpd_ptrc[c] + (0.012019) cpd_5mthf[c] + (10.008112) cpd_k[c] => cpd_trace_macro[c]
+  subsystem: Biomass

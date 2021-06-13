@@ -1,0 +1,40 @@
+ACGAMK,GlcNac Catabolism
+AGDC,GlcNac Catabolism
+G6PDA,GlcNac Catabolism
+FBP,Glycolysis
+FBA,Glycolysis
+TPI,Glycolysis
+GAPD,Glycolysis
+PGK,Glycolysis
+PGM,Glycolysis
+ENO,Glycolysis
+PYK,Pyruvate Metabolism
+PPS,Pyruvate Metabolism
+PDH,Pyruvate Metabolism
+PFL,Pyruvate Metabolism
+PGI,ED Pathway
+G6PDHy,ED Pathway
+PGDH,ED Pathway
+PGDHY,ED Pathway
+EDA,ED Pathway
+TKT2,PPP
+TAL,PPP
+TKT1,PPP
+RPE,PPP
+RPI,PPP
+XPK,PPP
+ME2,Anapleurotic Reactions
+PPC,Anapleurotic Reactions
+PTAr,Acetate Metabolism
+ACKr,Acetate Metabolism
+CS,TCA
+ACONT,TCA
+ICDHxi,TCA
+ICDHy,TCA
+ICL,TCA
+SUCOAS,TCA
+FRD10,TCA
+FRD11,TCA
+SUCD7,TCA
+FUM,TCA
+MDH,TCA

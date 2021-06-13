@@ -1,0 +1,27 @@
+name: GEM-iWP2
+biomass: Biomass_WP2
+default_flux_limit: 100.0
+compartments:
+- id: c
+  name: cytosol
+  adjacent_to: p
+- id: e
+  name: extracellular
+  adjacent_to: p
+- id: p
+  name: periplasm
+  adjacent_to: [c, e]
+compounds:
+- include: ./compounds.tsv
+  format: tsv
+reactions:
+- include: ./WP2-reactions.yaml
+- include: WP2-gene-associations.tsv
+  format: tsv
+- include: ./WP2-biomass.yaml
+exchange:
+- include: ./exchange/lmo-exchange-04C.yaml
+model:
+- include: model_def.tsv
+limits:
+- include: ./limits/limits-04C.yaml

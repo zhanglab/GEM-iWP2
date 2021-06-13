@@ -1,0 +1,11 @@
+deltaG: ./tmfa-inputs/WP2-Group-Contribution-Predictions.tsv
+exclude: ./tmfa-inputs/WP2-Group-Contribution-Exclude.tsv
+transporters: ./tmfa-inputs/transport-paramters-shewanella.tsv
+concentrations: ./tmfa-inputs/lmo-812-concentrations-Molar-expanded-04C.tsv
+proton-in: cpd_h[c]
+proton-out: cpd_h[p]
+proton-other:  cpd_h[e]
+water:
+  - cpd_h2o[e]
+  - cpd_h2o[p]
+  - cpd_h2o[c]
