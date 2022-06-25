@@ -5,10 +5,13 @@ psychrophilic bacterium, *Shewanella psychrophila* WP2. A detailed account on
 the reconstruction and modeling of the WP2 model is summarized in the following
  manuscript:
 
-Dufault-Thompson K§, Nie C, Jian H, Wang F, and Zhang Y. (2021)
-Reconstruction and analysis of thermodynamically constrained metabolic models
-reveal mechanisms of metabolic remodeling under temperature perturbations of
-a deep-sea bacterium. (In Revision)
+Dufault-Thompson K§, Nie C, Jian H, Wang F, and Zhang Y. (2022)
+Reconstruction and analysis of thermodynamically-constrained models reveal 
+metabolic responses of a deep-sea bacterium to temperature perturbations. 
+
+Please note that the data provided to run all the Rscripts is included but you
+will need to set the working directory to be the directory as the directory that
+the script is located in.
 
 ## List of model files
 * model.yaml
@@ -62,7 +65,7 @@ an ATP maintenance reaction was fitted to the temperature-specific growth rate
 measured from experimental studies to model the non-growth-related maintenance
 cost under each temperature. The fitted ATP maintenance flux for each
 temperature condition is summarized in the corresponding YAML files under the
-limits/ directory, and a brief reference of the fitting procedure is described
+`limits/` directory, and a brief reference of the fitting procedure is described
 below:
 
 Under each temperature condition, a robustness analysis was performed using
@@ -106,26 +109,29 @@ A linear fitting
 of the ATP maintenance flux vs the biomass fluxes was then done to determine
 the ATP maintenance cost for each temperature that would result in the model
 matching the experimental biomass production. The fitting and estimation of
-the ATP maintenance flux can be done using theATPM-fit.R script by providing
+the ATP maintenance flux can be done using the ATPM-fit.R script by providing
 the script with the directory that contains the output from TMFA-Robust.py.
 
-  `Rscript scripts/ATPM/ATPM-fit.R ./scripts/ATPM/`
+The Rscript and data used to perform the fitting of the growth curve and ATPM robustness
+simulations is in the ./scripts/ATPM directory. The script plot_Fig1.r will read
+in the associated tables from the directory and plot out a summarized growth curve
+and a plot of the ATPM robustness simulations for each temperature. The script
+will produce summarized data tables and a PDF image file Figure1.pdf.
 
-The output of this script will be a PDF showing the plots of the ATP maintenance
-fluxes ('scripts/ATPM/ATPM-fittings.pdf') and a table will be printed to the
-standard output that gives the estimated ATP maintenance fluxes for each
-temperature:
+The range of ATPM values for each temperature was determined to be:
 
-  ` [1,] "4C"  "2.77793659458319"
-    [2,] "15C" "1.33139444782041"
-    [3,] "20C" "9.40642097520033"`
+   | Temp   | Min   | Max   |
+   |--------|-------|-------|
+   | 4C     | 2.71  | 2.82  |
+   | 15C    | 1.32  | 1.36  |
+   | 20C    | 7.41  | 11.55 |
 
 Flux limits files with the
 final values for the ATP maintenance reaction are provided in the
 limits/ directory of the WP2 model repository.
 
 
-## Simulating Growth of WP2
+## Simulating Growth of WP2 using random simulations
 
 Simulations of growth for each temperature were performed using the TMFA
 approach as implemented in PSAMM. The input files for running these
@@ -133,20 +139,20 @@ simulations are provided in the tmfa-inputs/ directory of the WP2 model
 repository. Running the TMFA simulations can be done through the following
 commands:
 
-  `psamm-model --model model-04C.yaml tmfa --solver threads=1 \
-    --config tmfa-inputs/config-04C.yaml \
+  `psamm-model --model model-04C.yaml tmfa --single-solution random --solver threads=1 \
+    --config tmfa-inputs/config-04C.yaml --threshold {value} \
     --temp 4 --phin 6,8 --phout 6,8  simulation > ./scripts/TMFA-results/04C-TMFA.tsv`
-  `
 
-  `psamm-model --model model-15C.yaml tmfa --solver threads=1 \
-    --config tmfa-inputs/config-15C.yaml \
+  `psamm-model --model model-15C.yaml tmfa --single-solution random --solver threads=1 \
+    --config tmfa-inputs/config-15C.yaml --threshold {value} \
     --temp 15 --phin 6,8 --phout 6,8  simulation > ./scripts/TMFA-results/15C-TMFA.tsv`
 
-  `psamm-model --model model-20C.yaml tmfa --solver threads=1 \
-    --config tmfa-inputs/config-20C.yaml \
+  `psamm-model --model model-20C.yaml tmfa --single-solution random  --solver threads=1 \
+    --config tmfa-inputs/config-20C.yaml --threshold {value} \
     --temp 20 --phin 6,8 --phout 6,8  simulation > ./scripts/TMFA-results/20C-TMFA.tsv`
 
-***NOTE: It is suggested that these simulations be run with the --solver threads=1 option if you are using the CPLEX linear programming solver.***
+*NOTE: It is suggested that these simulations be run with the --solver threads=1 option
+if you are using the CPLEX linear programming solver.*
 
 The output from these commands will be the variability analysis results for
 each of the variables in the TMFA problem. Results for each variable will be
@@ -191,16 +197,52 @@ TMFA simulations.her
 
   `Rscript scripts/efficiency/efficiency-plotting.R ./scripts/efficiency/`
 
+The out from running these commands is a single random solution from within the
+solution space of the TMFA problem with the biomass fixed to the value specified
+with the '--threshold' option. Each variable in the problem (flux, deltaG, and
+compound concentration) is reported with its value for this single solution in
+the output of these commands. For the simulations performed in the study the
+biomass was fixed at a random value between the min and max biomass of each model:
 
-# Comparing Flux Variability
+   | Temp   | Min    | Max   |
+   |--------|--------|-------|
+   | 4C     | 0.110  | 0.112 |
+   | 15C    | 0.254  | 0.255 |
+   | 20C    | 0.042  | 0.135 |
 
-Flux variability between the models can be plotted and compared using a Pairwise Wilcoxan Rank Sum test using the 'scripts/variability/flux-variability.R' script. This will produce the plot used as Figure S4.
+For each temperature 1000 random simulations were performed and then the results
+were summarized into summary tables provided in the ./scripts/TMFA-results/
+directory. This directory contains the files needed to run the subsequent analyses
 
-  `Rscript scripts/variability/flux-variability.R ./scripts/variability/`
+## Calculating Metabolic Efficiency Metrics
 
+The metabolic efficiency metrics are calculated based on the flux simulation
+results for each temperature. The scripts and data associated with the generating
+the efficiency metrics is included in the ./script/efficiency/ directory. The
+calculate-effic.py script takes the 'atp-rxns', 'carbon-exchange', temperature,
+and path to a directory containing random simulation results as inputs and produces
+a summarized file containing the CUE, ATP per biomass, and ATP per carbon values
+for each random simulation in the directory supplied. This scrip produces a table
+like the one in the random-effic-values.tsv file.
 
-# Plotting Concentration, Flux, and DeltaG Ranges
+The 'plot_Fig2.R' script can then be used to plot out boxplots showing the distributions
+of each efficiency metric based on the results in the random-effic-values.tsv file.
+This script produces a PDF image file called Figure2.pdf.
 
-The variability of selected metabolite concentrations, fluxes, and Gibbs free energy values shown in Supplemental Figures 1-3 can be plotted using the 'scripts/variability/plot-fluxes-barbell.R'
+## Analysis of Flux, DeltaG, and Metabolite distributions
+R scripts detailing the workflow for the analysis of the simulation results are
+included in the ./scripts/analysis/ directory. The data read in by these analysis
+scripts is all supplied in the ./scripts/TMFA-results/ directory. This directory
+contains tables that summarize the compound concentration, deltaG, and flux
+values from the random simulations of each temperature. They also include the
+gene count table associated with the WP2 transcriptome.
 
-  `Rscript scripts/variability/plot-fluxes-barbell.R ./scripts/variability/`
+The first script '1_flux_gibbs_expression.R', include the analysis workflow related to the distribution
+of fluxes and deltaG values, along with the comparisons of the modeling and differential
+expression results. The second script '2_cpd_analysis.R' includes the analysis of the
+metabolite concentrations across the random simulations. These scripts will both produce
+summary tables that provide information on the summarized values for each simulation variable
+alongside statistical test results that were used to identify the significant differences between
+temperatures. The scripts also produce multiple figures that summarize the comparison between
+fluxes and deltaG values, look at gene expression in different conditions, and compare the
+ratios of different metabolite concentrations.

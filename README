@@ -33,6 +33,9 @@ temperature based models.
 tmfa-inputs/*
 - Input files to run TMFA simulations on temperature based models.
 
+GEM-iWP2.xml
+- SBML version of the WP2 GEM. 
+
 --------------
 Commands used to Run TMFA Simulations:
 
@@ -64,5 +67,6 @@ scripts/ATPM/*
 scripts/efficiency/*
 - Scripts associated with calculating metabolic efficiency metrics.
 
-scripts/variability/*
-- Scripts associated with analysis of variability in the WP2 model.
+scripts/analysis/*
+- Scripts associated with analysis of fluxes, deltaG values, concentrations, and
+gene expression values.
