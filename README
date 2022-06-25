@@ -64,5 +64,6 @@ scripts/ATPM/*
 scripts/efficiency/*
 - Scripts associated with calculating metabolic efficiency metrics.
 
-scripts/variability/*
-- Scripts associated with analysis of variability in the WP2 model.
+scripts/analysis/*
+- Scripts associated with analysis of fluxes, deltaG values, concentrations, and
+gene expression values.
