@@ -1,2 +1,3 @@
 - reaction: ATPM
-  fixed: 1.33
+  lower: 1.32
+  upper: 1.36
